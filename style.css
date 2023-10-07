@@ -1,0 +1,73 @@
+h1 {
+  color: black;
+  font-size: 50px;
+}
+h2 {
+  color: black;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  color: black;
+  font-family: Roboto, Arial, sans-serif;
+}
+.welcome {
+  padding: 50px;
+}
+
+.pictureofmyself {
+  margin: 100px;
+  width: 300px;
+}
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cat {
+  margin: 100px;
+  width: 400px;
+}
+
+.catbox {
+  display: flex;
+  justify-content: center;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: Roboto, Arial, sans-serif;
+}
+.getintouch {
+  display: flex;
+  padding-top: 50px;
+}
+
+.contactform {
+  padding-top: 50px;
+}
+
+.field {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid: repeat(2, 420px) / auto-flow 420px;
+}
+
+#container > div {
+  background-color: #8ca0ff;
+  width: 400px;
+  height: 400px;
+}
