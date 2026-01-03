@@ -1,7 +1,12 @@
 :root {
     --color-bg: #ffffff;
     --color-text: #111111;
-    --color-accent: #4f46e5;
+    --color-accent: #8b5e3c;
+    --color-accent-soft: #e8d3b0;
+    --color-bg-start: #fbf7f2;
+    --color-bg-end: #f6e6c9;
+
+    --shadow-soft: 0 20px 40px rgba(59, 47, 42, 0.12);
 
     --font-base: system-ui, sans-serif;
 
@@ -11,17 +16,19 @@
 }
 
 body{
-    font-family: var(--font-base);
     background: var(--color-bg);
+    font-family: var(--font-base);
     color: var(--color-text);
     line-height: 1.6;
 }
 .page{
     padding: 2rem 1.25rem;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 h1{
-    font-size: 4rem;
+    font-size: 3.5rem;
     line-height: 1.1;
 
 }
@@ -69,10 +76,11 @@ h1{
 @media (min-width: 1024px) {
     .page {
         padding: 4rem 6rem;
+
     }
 
     h1 {
-        font-size: 5rem;
+        font-size: 4.5rem;
     }
 
     .page-header-image img {
