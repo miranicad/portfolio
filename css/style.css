@@ -1,0 +1,45 @@
+:root {
+    --color-bg: #ffffff;
+    --color-text: #111111;
+    --color-accent: #4f46e5;
+
+    --font-base: system-ui, sans-serif;
+
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 2rem;
+}
+
+body{
+    font-family: var(--font-base);
+    background: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+h1{
+
+}
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.page-header-image {
+    flex: 1;
+}
+
+.page-header-text {
+    flex: 1;
+}
+
+.page-header-image img {
+    width: 50%;
+    height: auto;
+}
+
+ h2, h3 {
+    line-height: 1.2;
+
+}
