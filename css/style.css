@@ -16,14 +16,21 @@ body{
     color: var(--color-text);
     line-height: 1.6;
 }
+.page{
+    padding: 2rem 1.25rem;
+}
 
 h1{
+    font-size: 4rem;
+    line-height: 1.1;
 
 }
 .hero {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 4rem;
+    gap: 3rem;
+    text-align: center;
 }
 
 .page-header-image {
@@ -35,11 +42,40 @@ h1{
 }
 
 .page-header-image img {
-    width: 50%;
+    width: 60%;
     height: auto;
 }
 
  h2, h3 {
     line-height: 1.2;
+}
 
+@media (min-width: 768px) {
+    .page {
+        padding: 3rem 3rem;
+    }
+
+    .hero {
+        flex-direction: row;
+        text-align: left;
+        gap: 4rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .page {
+        padding: 4rem 6rem;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    .page-header-image img {
+        max-width: 320px;
+    }
 }
