@@ -1,0 +1,3 @@
+[submodule "simple-llm-chatbot"]
+	path = simple-llm-chatbot
+	url = https://github.com/miranicad/simple-llm-chatbot
