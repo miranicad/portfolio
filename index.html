@@ -1,48 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset= "UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel ="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Tamira Leber</title>
 </head>
-    <body>
-        <div class="page">
-        <section class ="hero">
-            <div class ="page-header-text">
-                <h1>Hello,</h1>
-                <h1>I'm Tamira</h1>
-            </div>
-            <div class ="page-header-image">
-                    <img src="assets/picture.jpeg">
-            </div>
-        </section>
-        <section class="introduction">
-            <h2>Computer Science Student | On my way into AI & ML</h2>
-            <p>
-                I’m a curious, solution-driven tech mind in the final stretch of my Computer Science degree, carving my path into AI and Machine Learning.
-                I’m continuously developing my skills and trying them out in small projects, learning by experimenting and seeing what truly works in practice.
-                I’m excited to see where this path leads next and genuinely interested in roles where I can grow, make meaningful contributions, and bring my strengths into a team that values impact.
-            </p>
-            <p>You can find my GitHub profile here: </p>
-            <a href="https://github.com/miranicad" target="_blank" rel ="noopener">Github</a>
-        </section>
-            <section class="projects">
-                <h2>Projects I am working on</h2>
+<body>
+<div class="page">
+    <section class="hero">
+        <div class="page-header-text">
+            <h1>Hello,</h1>
+            <h1>I'm Tamira</h1>
+        </div>
+        <div class="page-header-image">
+            <img src="assets/picture.jpeg">
+        </div>
+    </section>
+    <p>You can find my GitHub profile here: </p>
+    <a href="https://github.com/miranicad" target="_blank" rel="noopener">Github</a>
+    <section class="introduction">
+        <h2>Computer Science Student | Building at the intersection of AI, Software and Design</h2>
+        <p>
+            I build things that work: from full-stack web applications to AI pipelines to 3D games.I am finishing a
+            Bachelor's in iCompetence, a degree that combines software engineering, UI/UX design, and product
+            management. It is an interdisciplinary program built around shipping digital products that actually work for
+            people, which means I think about code, user needs, and product decisions as one thing rather than three
+            separate concerns. </p>
 
-                <h3>Why hire me? Ask Tamira AI</h3>
-                <p>This is a simple chatbot that answers questions about myself. It is designed to help me find a job in the industry.</p>
-                <p>Get to know me</p>
-                <div class="embed">
-                    <iframe
-                            src="https://tamira-simple-llm-chatbot.streamlit.app/?embed=true"
-                            title="Chatbot Demo"
-                            loading="lazy"
-                            sandbox="allow-scripts allow-same-origin allow-forms allow-popups"
-                            allow="clipboard-read; clipboard-write"
-                    ></iframe>
-                </div>
-            </section>
-       </div>
-    </body>
+    </section>
+    <br>
+    <section class="projects">
+        <h2>My Projects</h2>
+        <h3>Choir Practice App · Full-Stack Web Application · Bachelor's Thesis</h3>
+        <p>A web application built to support choir rehearsal, from individual practice to conductor-led session
+            management. The app renders interactive MusicXML scores in the browser, handles audio playback and
+            recording, and provides separate interfaces for conductors and ensemble members with role-based access
+            control. I designed and built the entire system independently, ran a six-participant usability study,
+            iterated on the design based on structured feedback, and documented the process end to end to academic
+            standard.</p>
+        <p>Tech: React, TypeScript, Node.js, MusicXML rendering, audio Web APIs</p>
+
+        <h3>Empathic AI Chatbot · Research Project · FHNW x Horizon Europe (IMPortant)</h3>
+        <p>A conversational AI system designed to support cancer patients, developed as part of a EU-funded research
+            project. I was responsible for the full AI layer: a retrieval-augmented generation pipeline using vector
+            embeddings for context retrieval, structured prompt engineering to shape empathic responses, and an
+            evaluation framework based on EPITOME to measure empathy quality and identify weak outputs systematically.
+            The goal was not just to build a chatbot but to build one that could be measured and improved.</p>
+        <p>Tech: Python, OpenAI API, vector databases, prompt engineering, EPITOME evaluation framework</p>
+
+        <h3>Artifact of Earth · 3D Game · Unity</h3>
+        <p>A physics-based 3D game built in Unity, developed as a personal long-term project. Artifact of Earth explores
+            environmental themes through mechanics that reward curiosity and exploration.</p>
+        <p>Tech: Unity, C#, 3D physics, game systems design</p>
+
+
+        <h3>Why hire me? Ask Tamira AI</h3>
+        <p>This is a simple chatbot that answers questions about myself. It is designed to help me find a job in the
+            industry.</p>
+        <p>Get to know me</p>
+        <div class="embed">
+            <button class="embed-start" onclick="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                Start Chatbot
+            </button>
+            <iframe
+                    style="display:none"
+                    data-src="https://tamira-simple-llm-chatbot.streamlit.app/?embed=true"
+                    title="Chatbot Demo"
+                    sandbox="allow-scripts allow-same-origin allow-forms allow-popups"
+                    allow="clipboard-read; clipboard-write"
+                    onload="this.contentWindow"
+            ></iframe>
+            <script>
+                document.querySelector('.embed-start').addEventListener('click', function() {
+                    const iframe = this.nextElementSibling;
+                    iframe.src = iframe.dataset.src;
+                });
+            </script>
+        </div>
+    </section>
+</div>
+</body>
 </html>
